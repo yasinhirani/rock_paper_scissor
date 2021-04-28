@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>❤️ Rock Paper Scissor ❤️</h1>
+    </div>
+    <div class="score">
+        <div class="human">
+            <p>Your score:</p>
+            <p id="human_score">0</p>
+        </div>
+        <div class="computer">
+            <p>Computer score:</p>
+            <p id="cmp_score">0</p>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Choose from the following:</h1>
+    <div class="options">
+        <button name="rock" class="selection" data-selection="rock">✊</button>
+        <button name="paper" class="selection mar_gin" data-selection="paper">✋</button>
+        <button name="scissor" class="selection mar_gin" data-selection="scissor">✌</button>
+    </div>
+    <div class="result">
+        <div class="human_result">
+            <p>Your choice:</p>
+            <p id="human_choice"></p>
+        </div>
+        <div class="cmp_result">
+            <p>Computer choice:</p>
+            <p id="cmp_choice"></p>
+        </div>
+    </div>
+    <p id="winner"></p>
+    <script src="App.js"></script>
+</body>
+</html>
