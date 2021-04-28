@@ -13,6 +13,7 @@ const getClick = () => {
             const clickName = option.name;
             getComputerClick(clickName);
             getFinalWinner();
+            option.classList.remove('hover');
         })
     })
 }
@@ -27,7 +28,7 @@ const getComputerClick = (human) => {
     winner(human, cmp_choice);
 }
 const winner = (getHuman, getComputer) => {
-    console.log(getHuman, getComputer);
+    // console.log(getHuman, getComputer);
     if (getHuman === getComputer) {
         h_choice.textContent = getHuman;
         c_choice.textContent = getComputer;
